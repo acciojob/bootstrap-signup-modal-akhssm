@@ -7,7 +7,59 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	</head>
-	<body>
-	
+	<body class="container" style="margin-top:50px;">
+		
+		<!-- Sign Up Button -->
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
+			Sign Up
+		</button>
+
+		<!-- Signup Modal -->
+		<div id="signupModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Create Account</h4>
+					</div>
+					
+					<!-- Modal Body -->
+					<div class="modal-body">
+						<form>
+							<!-- Email -->
+							<div class="form-group">
+								<label for="signupEmail">Email address</label>
+								<input type="email" class="form-control" id="signupEmail" placeholder="Enter email">
+								<p class="help-block">Your information is safe with us.</p>
+							</div>
+
+							<!-- Password -->
+							<div class="form-group">
+								<label for="signupPassword">Password</label>
+								<input type="password" class="form-control" id="signupPassword" placeholder="Password">
+							</div>
+
+							<!-- Confirm Password -->
+							<div class="form-group">
+								<label for="signupConfirmPassword">Confirm Password</label>
+								<input type="password" class="form-control" id="signupConfirmPassword" placeholder="Confirm Password">
+							</div>
+						</form>
+					</div>
+					
+					<!-- Modal Footer -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
 	</body>
 </html>
